@@ -658,6 +658,7 @@ Enabling this feature also enables [Tasmota TLS](TLS) as `sendmail` uses SSL.
 
     Remark:  
     A number of e-mail servers (such as Gmail) require the receiver's e-mail address to be enclosed by `< ... ` as in example above. Most other e-mail servers also accept this format. While ESP8266 sendmail needs brackets, ESP32 sendmail inserts brackets itself so you should not specify brackets here.  
+    The same goes for the From email on gmail. If you dont put it on <> you get Wrong Parameters error.
 
 The following parameters can be specified during compilation via `#define` directives in `user_config_override.h`:  
 * `EMAIL_SERVER`  
